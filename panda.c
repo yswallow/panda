@@ -72,7 +72,17 @@ void panda_led_set(uint8_t address, uint8_t port, uint8_t pin_number, bool led_s
 void matrix_init_kb(void) {
   // put your keyboard start-up code here
   // runs once when the firmware starts up
-
+  #ifdef PANDA_LED_ENABLE
+  #ifdef NUMLOCK_LED_ADDRESS
+    panda_led_init(NUMLOCK_LED_ADDRESS, NUMLOCK_LED_PORT, NUMLOCK_LED_PIN_NUMBER);
+  #endif
+  #ifdef CAPSLOCK_LED_ADDRESS
+    panda_led_init(CAPSLOCK_LED_ADDRESS, CAPSLOCK_LED_PORT, CAPSLOCK_LED_PIN_NUMBER);
+  #endif
+  #ifdef SCROLLLOCK_LED_ADDRESS
+    panda_led_init(SCROLLLOCK_LED_ADDRESS, SCROLLLOCK_LED_PORT, SCROLLLOCK_LED_PIN_NUMBER);
+  #endif
+  #endif
   matrix_init_user();
 }
 
