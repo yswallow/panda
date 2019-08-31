@@ -22,7 +22,7 @@
 #define TAPPING_TERM 200
 #define IGNORE_MOD_TAP_INTERRUPT
 
-#define DEBUG_MATRIX_SCAN_RATE
+//#define DEBUG_MATRIX_SCAN_RATE
 
 // Command settings
 #define IS_COMMAND() (get_mods() == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
