@@ -1,0 +1,2 @@
+BOOTMAGIC_ENABLE = full
+COMMAND_ENABLE = false

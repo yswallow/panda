@@ -1,1 +1,1 @@
-DEFAULT_FOLDER = panda/satsuma/rev1
+DEFAULT_FOLDER = panda/panda_split/rev1
